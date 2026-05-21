@@ -12,20 +12,39 @@ export default function Navbar() {
             Sri Krishna Chaitanya
           </Link>
 
-          <nav className="hidden md:flex items-center gap-10 text-lg font-medium text-slate-600">
-            <a href="#skills" className="hover:text-violet-600 transition">
+          <nav className="hidden items-center gap-10 text-lg font-medium text-slate-600 md:flex">
+            <a
+              href="#skills"
+              className="transition hover:text-violet-600"
+            >
               Skills
             </a>
 
-            <a href="#experience" className="hover:text-violet-600 transition">
+            <a
+              href="#experience"
+              className="transition hover:text-violet-600"
+            >
               Experience
             </a>
 
-            <a href="#projects" className="hover:text-violet-600 transition">
+            <a
+              href="#projects"
+              className="transition hover:text-violet-600"
+            >
               Projects
             </a>
 
-            <a href="#contact" className="hover:text-violet-600 transition">
+            <a
+              href="#certifications"
+              className="transition hover:text-violet-600"
+            >
+              Certifications
+            </a>
+
+            <a
+              href="#contact"
+              className="transition hover:text-violet-600"
+            >
               Contact
             </a>
           </nav>

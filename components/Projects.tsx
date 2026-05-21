@@ -13,7 +13,6 @@ const projects = [
     tech: ["Next.js", "Supabase", "Razorpay", "VPS"],
     image: "/projects/trading-platform-main.jpg",
   },
-
   {
     title: "AI Medical Chatbot",
     description:
@@ -26,7 +25,6 @@ const projects = [
     tech: ["React.js", "FastAPI", "Python", "LLM APIs"],
     image: "/projects/medical-chatbot.jpg",
   },
-
   {
     title: "ERPNext Migration Workflow",
     description:
@@ -39,7 +37,6 @@ const projects = [
     tech: ["Python", "ERPNext", "MariaDB", "MS SQL"],
     image: "/projects/erpnext-migration.jpg",
   },
-
   {
     title: "Hybrid Quantum-Classical ML",
     description:
@@ -56,21 +53,9 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section
-      id="projects"
-      className="bg-white py-24"
-    >
-      <div className="max-w-7xl mx-auto px-6">
-        <h2
-          className="
-            mb-16
-            text-4xl
-            sm:text-5xl
-            font-black
-            tracking-tight
-            text-slate-950
-          "
-        >
+    <section id="projects" className="bg-white py-24">
+      <div className="mx-auto max-w-7xl px-6">
+        <h2 className="mb-16 text-4xl font-black tracking-tight text-slate-950 sm:text-5xl">
           Featured Projects
         </h2>
 
@@ -78,27 +63,9 @@ export default function Projects() {
           {projects.map((project) => (
             <div
               key={project.title}
-              className="
-                overflow-hidden
-                rounded-3xl
-                border border-slate-200
-                bg-white
-                shadow-sm
-                transition duration-300
-                hover:-translate-y-1
-                hover:shadow-2xl
-              "
+              className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-2xl"
             >
-              <div
-                className="
-                  relative
-                  h-[320px]
-                  w-full
-                  border-b
-                  border-slate-200
-                  bg-slate-100
-                "
-              >
+              <div className="relative h-80 w-full border-b border-slate-200 bg-slate-100">
                 <Image
                   src={project.image}
                   alt={project.title}
@@ -109,25 +76,12 @@ export default function Projects() {
               </div>
 
               <div className="p-8">
-                <h3
-                  className="
-                    mb-5
-                    text-3xl
-                    font-black
-                    text-slate-950
-                  "
-                >
+                {/* ONLY ONE TITLE */}
+                <h3 className="mb-5 text-3xl font-black text-slate-950">
                   {project.title}
                 </h3>
 
-                <p
-                  className="
-                    mb-6
-                    text-lg
-                    leading-9
-                    text-slate-600
-                  "
-                >
+                <p className="mb-6 text-lg leading-9 text-slate-600">
                   {project.description}
                 </p>
 
@@ -135,15 +89,9 @@ export default function Projects() {
                   {project.highlights.map((item) => (
                     <li
                       key={item}
-                      className="
-                        flex
-                        items-start
-                        gap-3
-                        text-slate-700
-                      "
+                      className="flex items-start gap-3 text-slate-700"
                     >
                       <span className="mt-2 h-2 w-2 rounded-full bg-violet-600" />
-
                       <span>{item}</span>
                     </li>
                   ))}
@@ -153,17 +101,7 @@ export default function Projects() {
                   {project.tech.map((tech) => (
                     <span
                       key={tech}
-                      className="
-                        rounded-full
-                        border
-                        border-slate-200
-                        bg-slate-100
-                        px-4
-                        py-2
-                        text-sm
-                        font-medium
-                        text-slate-700
-                      "
+                      className="rounded-full border border-slate-200 bg-slate-100 px-4 py-2 text-sm font-medium text-slate-700"
                     >
                       {tech}
                     </span>

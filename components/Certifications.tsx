@@ -7,7 +7,7 @@ const certifications = [
 
 export default function Certifications() {
   return (
-    <section className="bg-slate-50 py-24">
+    <section id="certifications" className="bg-slate-50 py-24">
       <div className="max-w-7xl mx-auto px-6">
         <h2
           className="
